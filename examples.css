@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+.image{
+    position: relative;
+    width: 300px;
+    border: 1px solid red;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.text{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 300px;
+    height: 0;
+    transition: 0.5s ease;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0,.5);
+}
+.image:hover .text{
+    overflow: visible;
+    height: 50%;
+}
+.txt{
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/**********************************************************/

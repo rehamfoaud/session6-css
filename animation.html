@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .anmi{
+            background-color: red;
+            width: 400px;
+            height: 200px;
+            animation: example infinite 5s;
+        }
+        @keyframes example {
+            0%   {background-color: red;}
+            25%  {background-color: yellow;}
+            50%  {background-color: blue;}
+            100% {background-color: green;}
+        }
+
+    .anmi2 {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        background-color: red;
+/*  animation => name  
+            duration 
+            timing-function 
+            delay(before start animation)
+            count(long for animation)
+            direction [(alternate=>make the animation run forwards first)
+            (alternate-reverse=> make the animation run backwords first)}*/
+        animation: example2  5s linear 0.5s infinite alternate-reverse ;
+}
+    @keyframes example2 {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+    <div class="anmi"></div>
+    <div class="anmi2"></div>
+</body>
+</html>

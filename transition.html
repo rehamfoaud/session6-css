@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+</head>
+<style>
+/* To create a transition effect, you must specify two things:
+    the CSS property you want to add an effect to
+    the duration of the effect
+*/
+.transition{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    /* transition: property  duration   timing   delay */
+    transition: width 5s ease 0.5s , height 4s ease 0.5s ,transform 2s ease 0.5s;
+}
+.transition:hover{
+width: 300px;
+transform: rotate(90deg);
+height: 300px;
+}
+</style>
+<body>
+<div class="transition"></div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+.icons a .layers{
+    width: 65px;
+    height: 55px;
+    transition: transform 0.3s;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+.icons a:hover .layers{
+    transform: rotate(-15deg) skew(10deg);
+    -webkit-transform: rotate(-15deg) skew(10deg);
+    -moz-transform: rotate(-15deg) skew(10deg);
+    -ms-transform: rotate(-15deg) skew(10deg);
+    -o-transform: rotate(-15deg) skew(10deg);
+}
+.icons a .layers span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 70%;
+    border: 1px solid blue;
+    transition: all 0.3s;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    margin: 5px;
+}
+.icons a .layers span.fab{
+    line-height: 35px;
+    text-align: center;
+    
+}
+.icons a:hover .layers span:nth-child(1){
+    opacity: 0.2;
+}
+.icons a:hover .layers span:nth-child(2){
+    opacity: 0.4;
+    transform: translate(5px,-5px);
+    -webkit-transform: translate(5px,-5px);
+    -moz-transform: translate(5px,-5px);
+    -ms-transform: translate(5px,-5px);
+    -o-transform: translate(5px,-5px);
+}
+.icons a:hover .layers span:nth-child(3){
+    opacity: 0.6;
+    transform: translate(10px,-10px);
+    -webkit-transform: translate(10px,-10px);
+    -moz-transform: translate(10px,-10px);
+    -ms-transform: translate(10px,-10px);
+    -o-transform: translate(10px,-10px);
+}
+.icons a:hover .layers span:nth-child(4){
+    opacity: 0.8;
+    transform: translate(15px,-15px);
+    -webkit-transform: translate(15px,-15px);
+    -moz-transform: translate(15px,-15px);
+    -ms-transform: translate(15px,-15px);
+    -o-transform: translate(15px,-15px);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .transform{
+            border: 1px solid red;
+            transform:translate(25px,50px);
+            width: 200px;
+            height: 150px;
+        }
+        .p-rotate /* positive with clockwise*/{
+            margin: 100px;
+            border: 1px solid red;
+            transform: rotate(45deg);
+            width: 200px;
+            height: 250px;
+        }
+        .N-rotate /* negative counter-clockwise*/ {
+            margin: 100px;
+            border: 1px solid red;
+            transform: rotate(-45deg);
+            width: 200px;
+            height: 250px;
+        }
+        .scale{
+            margin: 100px;
+            border: 1px solid red;
+            transform:scale(0.5,0.5);/*0.5 X width,,0.5 X height =>(100,125)*/
+            width: 200px;
+            height: 250px;
+        }
+        .skew{
+            margin: 100px;
+            border: 1px solid red;
+            transform:skewX(20deg);
+            width: 200px;
+            height: 250px;
+        }
+        .matrix{
+            margin: 100px;
+            border: 1px solid red;
+            transform:matrix(2,0.3,0, 2,50 ,100);
+            width: 100px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <!-- transform => function moves an element from its current position -->
+    <div class="transform">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis consectetur inventore a dolore voluptates. Magni at id obcaecati quod? Illo ab repellat nobis adipisci? Voluptate</p>
+    </div>
+    <div class="p-rotate">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis consectetur inventore a dolore voluptates. Magni at id obcaecati quod? Illo ab repellat nobis adipisci? Voluptate aperiam velit id in debitis natus explicabo ex blanditiis dolores, necessitatibus vero hic minus corporis.</p>
+    </div>
+    <div class="N-rotate">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis consectetur inventore a dolore voluptates. Magni at id obcaecati quod? Illo ab repellat nobis adipisci? Voluptate aperiam velit id in debitis natus explicabo ex blanditiis dolores, necessitatibus vero hic minus corporis.</p>
+    </div>
+    <!--scale(x,y)=>function increases or decreases the size of an element
+    scaleX(2)=>width only 
+    scaleY(2)=>height only
+    -->
+    <div class="scale">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis consectetur inventore a dolore voluptates. Magni at id obcaecati quod? Illo ab repellat nobis adipisci? Voluptate aperiam velit id in debitis natus explicabo ex blanditiis dolores, necessitatibus vero hic minus corporis.</p>
+    </div>
+    <!--skewX => function skews an element along the X-axis by the given angle.
+        skewY => function skews an element along the X-axis by the given angle.-->
+    <div class="skew">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis consectetur inventore a dolore voluptates. Magni at id obcaecati quod? Illo ab repellat nobis adipisci? Voluptate aperiam velit id in debitis natus explicabo ex blanditiis dolores, necessitatibus vero hic minus corporis.</p>
+    </div>
+    <!--matrix => matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())-->
+    <div class="matrix">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis consectetur inventore a dolore voluptates. Magni at id obcaecati quod? </p>
+    </div>
+</body>
+</html>
